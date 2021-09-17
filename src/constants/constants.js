@@ -48,7 +48,7 @@ export const users = [
   { name: 'Albeni', rating: 0 },
   { name: 'Пайтос', rating: 0 },
   { name: 'ППоханг', rating: 0 },
-  { name: 'Анастасия', rating: 0 },
+  { name: 'Анастасия', rating: 30.0 },
   { name: 'ДимаФед', rating: 0 },
   { name: 'Ксюкчч', rating: 0 },
   { name: 'Minigunчик', rating: 0 },
