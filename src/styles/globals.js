@@ -79,6 +79,101 @@ const GlobalStyles = createGlobalStyle`
       right: 10px;
       padding: 5px 7px;
   }
+
+  @mixin break {
+      thead {
+          display: none;
+      }
+
+      tr {
+          display: block;
+          margin-bottom: 5px;
+      }
+
+      td {
+          display: block;
+          position: relative;
+          padding-left: 130px;
+          text-align: left;
+          border-bottom: 0;
+
+          &:last-child {
+              border-bottom: 1px solid #ddd;            
+          }
+
+          &::before {
+              content: attr(data-heading);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 120px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              background-color: ${props => props.theme.colors.primary1};
+              color: #fff;
+              font-size: 0.75rem;
+              padding: 0 5px;
+              justify-content: center;
+          }
+      }
+  }
+
+  *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  .table-container {
+      max-width: 800px;
+      width: 90%;
+      margin: 0 auto 40px;
+      font-size: 1.6rem;
+
+      &__title {
+          background-color: #e10600;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+
+          h2 {
+              font-size: 24px;
+              font-weight: 300;
+          }
+      }
+
+      &__table {
+          width: 100%;
+          border-collapse: collapse;
+          color: #fff;
+
+          thead {
+              tr {
+                  &:nth-child(even) {
+                      background-color: ${props => props.theme.colors.background1};                      
+                  }
+              }
+          }
+
+          &--break-lg {
+              @media (max-width: 991px) {
+                  @include break;
+              }
+          }
+
+          &--break-md {
+              @media (max-width: 767px) {
+                  @include break;
+              }
+          }
+
+          &--break-lg {
+              @media (max-width: 575px) {
+                  @include break;
+              }
+          }
+      }
+  }
 `;
 
 export default GlobalStyles;

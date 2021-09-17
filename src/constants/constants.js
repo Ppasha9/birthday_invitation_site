@@ -19,8 +19,38 @@ export const competitions = [
   },
   {
     title: 'Самое лучшее исполнение песни на гитаре',
-    image: '/images/guitar.jpeg',
+    image: '/images/guitar.jpg',
     description: 'Конкурс для самых сексуальных мужчин на вечеринке. Судить будем строго и никого не будем щадить!',
     id: 3,
   },
+  {
+    title: 'Игры Nintendo Switch от Пайтоса',
+    image: '/images/paitos.jpg',
+    description: 'Конкурс для самых ярых фанатов Super Smash Utlimate Pooper Dooper Brazzers и Towerfall!',
+    id: 4,
+  },
+  {
+    title: 'Игры на XBOX Series X',
+    image: '/images/xbox_gay_pass.jpg',
+    description: 'Подборка игры из пасса для компании!',
+    id: 5,
+  },
+];
+
+export const users = [
+  { name: 'Ден-анимал', rating: 0 },
+  { name: 'Dimanshaman', rating: 0 },
+  { name: 'Stankevi4', rating: 0 },
+  { name: 'NikicH', rating: 0 },
+  { name: 'Sporeкис', rating: 0 },
+  { name: 'Ulich984', rating: 0 },
+  { name: 'cgsgilich', rating: 0 },
+  { name: 'Albeni', rating: 0 },
+  { name: 'Пайтос', rating: 0 },
+  { name: 'ППоханг', rating: 0 },
+  { name: 'Анастасия', rating: 0 },
+  { name: 'ДимаФед', rating: 0 },
+  { name: 'Ксюкчч', rating: 0 },
+  { name: 'Minigunчик', rating: 0 },
+  { name: 'Ppasha10', rating: 0 },
 ];
